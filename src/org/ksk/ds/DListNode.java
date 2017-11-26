@@ -6,7 +6,7 @@ package org.ksk.ds;
 public class DListNode {
 
     private DListNode previousLink;
-    private DListNode currentLink;
+    private DListNode nextLink;
     private int data;
 
     public DListNode getPreviousLink() {
@@ -17,12 +17,12 @@ public class DListNode {
         this.previousLink = previousLink;
     }
 
-    public DListNode getCurrentLink() {
-        return currentLink;
+    public DListNode getNextLink() {
+        return nextLink;
     }
 
-    public void setCurrentLink(DListNode currentLink) {
-        this.currentLink = currentLink;
+    public void setNextLink(DListNode nextLink) {
+        this.nextLink = nextLink;
     }
 
     public int getData() {
