@@ -16,7 +16,7 @@ public class InsertionSort {
 			}
 			inArray[j + 1] = key;
 		}
-		return inArray;
+		return inArray; 
 	}
 
 	public static void main(String[] args) {

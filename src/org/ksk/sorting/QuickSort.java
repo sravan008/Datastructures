@@ -64,7 +64,7 @@ class QuickSort
      System.out.println();
  }
 
- // Driver program
+ // Driver program 
  public static void main(String args[])
  {
      int arr[] = {10, 7, 8, 9, 1, 5};

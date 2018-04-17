@@ -24,7 +24,7 @@ public class BubbleSort {
 		int[] inArray = array.getIntArray(); // Reading input Array
 		int[] sortedArray = bubbleSort.bubbleSort(inArray);
 		
-		// printing
+		// printing 
 		Arrays.asList(inArray).forEach(s -> System.out.println(s));
 		System.out.println(Arrays.toString(sortedArray));
 	}

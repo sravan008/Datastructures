@@ -14,7 +14,7 @@ public class SelectionSort {
 			int min = i; // min variable use to save the min value
 			for (int j = i + 1; j < inArray.length; j++) {
 				if (inArray[j] < inArray[min])
-					min = j;
+					min = j; 
 			}
 			int temp = inArray[min];
 			inArray[min] = inArray[i];

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ReadArray {
 
 	public int[] getIntArray() {
-
+ 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter input size :");
 		int input = sc.nextInt();

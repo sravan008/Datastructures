@@ -26,7 +26,7 @@ class MergeSort {
 
 		// Initial indexes of first and second subarrays
 		int i = 0, j = 0;
-
+ 
 		// Initial index of merged subarry array
 		int k = l;
 		while (i < n1 && j < n2) {
