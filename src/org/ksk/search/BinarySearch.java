@@ -1,6 +1,6 @@
 package org.ksk.search;
 
-public class BinarySearch {
+public class BinarySearch { 
 
 	
 	private int find(int[] a, int x) {
