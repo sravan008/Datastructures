@@ -1,5 +1,9 @@
 package creational;
 
+/**
+ * @author sravan
+ *	One and only one object is instantiated for a given class
+ */
 public class Singleton {
 
 	// private static Singleton instance = new Singleton();
@@ -12,6 +16,9 @@ public class Singleton {
 	 */
 	private static volatile Singleton instance = null;
 
+	// Usage of the private constructor
+	// private constructor you prevent class instances from being created in any place other than this very class
+	
 	private Singleton() {
 		if (instance != null)
 			throw new RuntimeException("Use getInstance method to create a Singleton");
