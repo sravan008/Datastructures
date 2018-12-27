@@ -1,4 +1,4 @@
-package org.ksk.ds;
+package org.ksk.linkedlist;
 
 /**
  * Created by sravan on 11/24/2017.
@@ -6,21 +6,31 @@ package org.ksk.ds;
 
 public class Node {
 
-    private int data;
-    private Node next;
+	private int data;
+	private Node next;
+	private Node previous;
 
-    public int getData() {
-        return data;
-    }
-    public void setData(int data) {
-        this.data = data;
-    }
+	public Node getPrevious() {
+		return previous;
+	}
 
-    public Node getNext() {
-        return next;
-    }
+	public void setPrevious(Node previous) {
+		this.previous = previous;
+	}
 
-    public void setNext(Node link) {
-        this.next = link;
-    }
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+	public Node getNext() {
+		return next;
+	}
+
+	public void setNext(Node link) {
+		this.next = link;
+	}
 }

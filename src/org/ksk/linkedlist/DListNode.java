@@ -1,4 +1,4 @@
-package org.ksk.ds;
+package org.ksk.linkedlist;
 
 /**
  * Created by sravan on 11/25/2017.
