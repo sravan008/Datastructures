@@ -2,12 +2,10 @@ package org.ksk.ds.tree;
 
 public interface Tree {
 
-	public TreeNode insert(int data);
+	public BinaryTree insert(int data);
+
+	public void delete(int searchElement);
 
 	public void traverse();
-
-	public TreeNode lookUp(int data);
-
-	public TreeNode remove(TreeNode node, int data);
 
 }
