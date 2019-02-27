@@ -8,6 +8,8 @@ public class DoublyLinkedList implements ListInterface {
 	@Override
 	public int getLength() {
 
+
+
 		Node current = first;
 		int ctr = 0;
 		while (current != null) {
