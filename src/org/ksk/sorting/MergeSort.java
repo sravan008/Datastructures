@@ -13,7 +13,7 @@ class MergeSort {
 		int n2 = r - m;
 
 		/* Create temp arrays */
-		int L[] = new int[n1];
+		int[] L = new int[n1]; // both declartions are same
 		int R[] = new int[n2];
 
 		/* Copy data to temp arrays */

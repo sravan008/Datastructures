@@ -1,4 +1,4 @@
-package creational;
+package creationalpattern;
 
 public class SingletonDemo {
 	

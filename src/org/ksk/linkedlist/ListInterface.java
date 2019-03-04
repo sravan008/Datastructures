@@ -17,4 +17,5 @@ public interface ListInterface {
 	public boolean isEmpty();
 
 	public void insertAfterElement(int SearchElement, int data);
+	
 }

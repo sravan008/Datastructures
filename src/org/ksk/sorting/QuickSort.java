@@ -3,7 +3,9 @@ package org.ksk.sorting;
 //Java program for implementation of QuickSort
 class QuickSort
 {
- /* This function takes last element as pivot,
+ /* https://www.youtube.com/watch?v=COk73cpQbFQ
+  * 
+  *  This function takes last element as pivot,
     places the pivot element at its correct
     position in sorted array, and places all
     smaller (smaller than pivot) to left of

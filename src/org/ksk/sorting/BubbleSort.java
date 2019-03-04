@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class BubbleSort {
 
 	private int[] bubbleSort(int inArray[]) {
-		
-		for (int i = inArray.length - 1; i >= 0; i--) {
-			for (int j = 0; j <= i - 1; j++) {
+
+		for (int i = 0; i < inArray.length - 1; i++) {
+			for (int j = 0; j < inArray.length - i - 1; j++) {
 				if (inArray[j] > inArray[j + 1]) {
 					int temp = inArray[j];
 					inArray[j] = inArray[j + 1];
@@ -23,8 +23,8 @@ public class BubbleSort {
 		BubbleSort bubbleSort = new BubbleSort();
 		int[] inArray = array.getIntArray(); // Reading input Array
 		int[] sortedArray = bubbleSort.bubbleSort(inArray);
-		
-		// printing 
+
+		// printing
 		Arrays.asList(inArray).forEach(s -> System.out.println(s));
 		System.out.println(Arrays.toString(sortedArray));
 	}
