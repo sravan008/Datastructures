@@ -33,4 +33,10 @@ public class Node {
 	public void setNext(Node link) {
 		this.next = link;
 	}
+
+	@Override
+	public String toString() {
+		return "Node [data=" + data + ", next=" + next + ", previous=" + previous + "]";
+	}
+
 }

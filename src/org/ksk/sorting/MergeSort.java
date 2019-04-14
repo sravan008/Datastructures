@@ -63,7 +63,10 @@ class MergeSort {
 			int m = (l + r) / 2;
 
 			// Sort first and second halves
+			System.out.println("mvalue--> "+ m   +"-->"+l+"--->"+m);
 			sort(arr, l, m);
+			System.out.println("---POST----");
+			System.out.println("-->"+m+1+"--->"+r);
 			sort(arr, m + 1, r);
 
 			// Merge the sorted halves

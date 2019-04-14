@@ -7,6 +7,8 @@ public class LinkedListService {
 
 	public static void main(String[] args) {
 
+		LinkedListOps linkedListOps = new LinkedListOps();
+
 		/*
 		 * LinkedListService ll = new LinkedListService();
 		 * 
@@ -35,14 +37,15 @@ public class LinkedListService {
 		 * SinglyLinkedList linkedList = new SinglyLinkedList();
 		 * linkedList.insertAtBegining(11); linkedList.insertAtBegining(22);
 		 * linkedList.insertAtBegining(33); linkedList.insertAtBegining(44);
-		 * linkedList.insertAtBegining(55); //linkedList.displayList();
-		 * linkedList.deleteNodeAtBegining(); //linkedList.displayList();
-		 * linkedList.insertAtLastNode(101); linkedList.insertAtLastNode(202);
-		 * //linkedList.displayList(); linkedList.insertAfterList(33, 35);
+		 * linkedList.insertAtBegining(55);
+		 */ // linkedList.displayList();
+		/*
+		 * linkedList.deleteNodeAtBegining(); // linkedList.displayList();
+		 * linkedList.insertAtLastNode(101); linkedList.insertAtLastNode(202); //
+		 * linkedList.displayList(); linkedList.insertAfterList(33, 35);
 		 * linkedList.displayList(); linkedList.deleteNodeAtLast();
 		 * linkedList.displayList();
 		 */
-
 		// Circular linkedlist
 
 		/*
@@ -53,23 +56,32 @@ public class LinkedListService {
 		 * System.out.println(circularLinkedList.getLength());
 		 */
 
-		DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
-		doublyLinkedList.insertAtFirst(11);
-		doublyLinkedList.insertAtFirst(22);
-		doublyLinkedList.insertAtFirst(33);
-		doublyLinkedList.insertAtFirst(44);
-		// doublyLinkedList.displayList();
-		doublyLinkedList.insertAtEnd(55);
-		doublyLinkedList.insertAtEnd(66);
-		// doublyLinkedList.displayList();
-		doublyLinkedList.deleteFirst();
-		// doublyLinkedList.displayList();
-		doublyLinkedList.deleteLast();
-		// doublyLinkedList.displayList();
-		doublyLinkedList.insertAfterElement(22, 25);
-		doublyLinkedList.insertAfterElement(25, 27);
-		doublyLinkedList.insertAfterElement(55, 57);
-		doublyLinkedList.displayList();
+		/*
+		 * DoublyLinkedList doublyLinkedList = new DoublyLinkedList();
+		 * doublyLinkedList.insertAtFirst(11); doublyLinkedList.insertAtFirst(22);
+		 * doublyLinkedList.insertAtFirst(33); doublyLinkedList.insertAtFirst(44); //
+		 * doublyLinkedList.displayList(); doublyLinkedList.insertAtEnd(55);
+		 * doublyLinkedList.insertAtEnd(66); // doublyLinkedList.displayList();
+		 * doublyLinkedList.deleteFirst(); // doublyLinkedList.displayList();
+		 * doublyLinkedList.deleteLast(); // doublyLinkedList.displayList();
+		 * doublyLinkedList.insertAfterElement(22, 25);
+		 * doublyLinkedList.insertAfterElement(25, 27);
+		 * doublyLinkedList.insertAfterElement(55, 57); doublyLinkedList.displayList();
+		 */
+
+		SinglyLinkedList linkedList = new SinglyLinkedList();
+		linkedList.insertAtBegining(4);
+		linkedList.insertAtBegining(3);
+		linkedList.insertAtBegining(2);
+		linkedList.insertAtBegining(1);
+		linkedList.insertAtLastNode(5);
+		
+		linkedListOps.getMiddle(linkedList.getSingleLinkedListNode());
+		
+		// linkedListOps.reverseLinkedList(linkedList.getSingleLinkedListNode());
+		int rotateCount = 2;
+		// System.out.println(linkedListOps.rotateLinkedList(linkedList.getSingleLinkedListNode(),
+		// linkedList.getLastNode(), rotateCount));
 
 	}
 

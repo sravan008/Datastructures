@@ -154,4 +154,17 @@ public class SinglyLinkedList {
 		newNode.setNext(tempNode);
 	}
 
+	public Node getSingleLinkedListNode() {
+		return this.first;
+	}
+
+	public Node getLastNode() {
+
+		Node current = this.first;
+		while (current.getNext() != null) {
+			current = current.getNext();
+		}
+		return current;
+	}
+
 }
