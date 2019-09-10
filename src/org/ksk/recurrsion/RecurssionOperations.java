@@ -42,15 +42,25 @@ public class RecurssionOperations {
                 && isGivenNumberisConsecutiveNumberOrNot(inArray, i + 1);
     }
 
+    int sumOfGivenArray(int[] inArray, int i, int sum) {
+
+        if (i == 0) {
+            return sum+inArray[i];
+        }
+        return sum + inArray[i] + sumOfGivenArray(inArray, i - 1, sum);
+    }
 
     public static void main(String[] args) {
         RecurssionOperations ros = new RecurssionOperations();
+        int[] numArray = {4, 3, 6, 7, 0, 9, 2};
+        int[] inArray = {1, 2, 3, 4, 5};
         //sout is the shortcut for System.out.println
         //System.out.println(sumOntoNnumners(5));
-        int[] numArray = {4, 3, 6, 7, 0, 9, 2};
         //System.out.println(" *** Highest Number is*** " + ros.maxNumber(numArray, numArray.length - 1));
         String palandromTestString = "dsasd";
-        System.out.println(ros.isPalandrome(palandromTestString, 0, palandromTestString.length() - 1));
+        // System.out.println(ros.isPalandrome(palandromTestString, 0, palandromTestString.length() - 1));
+        //System.out.println(ros.isGivenNumberisConsecutiveNumberOrNot(numArray, 0));
+        System.out.println(ros.sumOfGivenArray(inArray,inArray.length-1,0));
     }
 
 }
