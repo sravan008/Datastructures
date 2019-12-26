@@ -21,7 +21,8 @@ public class SumOfTwoNumbers {
         return sumArray;
     }
 
-
+    //Time-complexity is O(n log(n)) and space-complexity - O(1)
+    //Sort the Array and use the Two pointers - One is pointing to first index, other one is pointing to last index
     List<Integer> twoNumberSum(int sum, int[] array) {
         List<Integer> sumArray = new ArrayList<>();
         int length = array.length - 1;
