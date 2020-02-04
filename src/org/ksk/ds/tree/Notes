@@ -1,0 +1,20 @@
+
+Tree terminology :
+
+        Tree's are Hierarchical not a liner DS like stacks, queues and Array's
+        Tree is a DS which made up of lots of nodes, each node point to a Number of nodes, not a just one
+        There is no order tree can maintain, its not a imp though
+        Tree is typically used to represent hierarchical information
+        A general tree DS can have any number of children but these tress are less useful and not very commonly used as a DS- It is not widely used
+        Binary tree - in a binary tree each node can have 0,1,2 children
+                                                                                                                                 A
+                                                                                                                                / \
+        Root Node - Parent node - A                                                                                            B   C
+        Edge - A link from parent node to child node                                                                              / \
+        Leaf - A node with no children    - F H G                                                                                D   E
+        Sibling node : Node which are at same level                                                                             / \   \
+                                                                                                                               F   H   G
+
+        C is a ancestor of F
+        F is a descendent of C
+        A is a root node also a ancestor for all it's decendent nodes
