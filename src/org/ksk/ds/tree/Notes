@@ -18,3 +18,32 @@ Tree terminology :
         C is a ancestor of F
         F is a descendent of C
         A is a root node also a ancestor for all it's decendent nodes
+
+   Tree Traversal :
+                    BFT - Breadth First
+                    DFT - Depth First
+
+    visiting and processed : is called traversal
+    Breadth-First : Visiting nodes at every level before moving on to the next level
+                       Start with Root node - it's at level 0
+                       Check whether there are other nodes at same level and visit them
+                       Once a level is exhausted then we move to next level
+                       Continue this till every node of the tree has been visited
+                       --> ABCDEFFGH
+                       --> Start from the root and add it to a Queue
+                       --> Dqueue and process the node and it's left and then right child to the queue
+                       --> Continue this as long as the queue is not empty
+
+    Depth-First   : Go deep into the tree
+                  : Pre-Order
+                  : In-Order
+                  : Post-Order
+                  : DF traversal involves going right to the leaf of the binary tree first before moving up the tree
+                  : Going DEEP before moving up
+                  : All types of traversal's using recursion
+                  : At every point we work with a subtree rooted at some node
+                  : The processing can be performed
+                        - Before - Pre-order
+                        - In-Between or - IN-Order
+                        - After - Post-order
+                  :Pre-order ---> A-->B-->C-->D-->F-->H-->E-->G
