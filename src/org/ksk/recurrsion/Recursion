@@ -1,0 +1,18 @@
+
+
+Recursion : There are two ways we can represent this,  1 is stack and other one is Tree model
+
+f(n)  = (2power(n+1)) -1  = f(2) = 2power 2+1 = 8 -1 = 7
+
+If you have more recursion functions then traversing will be easy on Trees
+Tree recursion traversing always from Top --to--> left --to--> Right
+
+Instruction pointer - where it will be get's called from the stack
+
+Towers of Hanoi :
+
+in-order to move n d isks from x to y using z -->
+
+
+Permutation : npr = n!/(n-r)!
+

@@ -106,7 +106,8 @@ public class BinaryTree implements Tree {
 
 	@Override
 	public void traverse() {
-		inOrder(root);
+		//inOrder(root);
+		preOrder(root);
 	}
 
 	public void inOrder(TreeNode node) {
@@ -116,4 +117,17 @@ public class BinaryTree implements Tree {
 			this.inOrder(node.getRight());
 		}
 	}
+
+	public void preOrder(TreeNode node) {
+		if (node != null) {
+			System.out.println(node.getData());
+			this.preOrder(node.getLeft());
+			this.preOrder(node.getRight());
+		}
+	}
+
+
+
+
+
 }

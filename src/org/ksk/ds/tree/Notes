@@ -47,3 +47,12 @@ Tree terminology :
                         - In-Between or - IN-Order
                         - After - Post-order
                   :Pre-order ---> A-->B-->C-->D-->F-->H-->E-->G
+
+     If you print Binary Search Tree in sorted order  - traverse the tree in  In-order
+
+    Traversing : Traverse entire tree
+    Searching : Finding out the node
+
+    2nd time visit --> In Order  --> Left --> Root --> Right
+
+    All the traversing [In order/ Pre order / Post order] takes o(n) time and space complexity
