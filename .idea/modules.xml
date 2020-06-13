@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Datastructures-1.iml" filepath="$PROJECT_DIR$/Datastructures-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/programs/Programs.iml" filepath="$PROJECT_DIR$/programs/Programs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/java.iml" filepath="$PROJECT_DIR$/java/java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
     </modules>
   </component>
 </project>
