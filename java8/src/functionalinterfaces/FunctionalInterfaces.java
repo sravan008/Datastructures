@@ -9,12 +9,12 @@ package functionalinterfaces;
  * someone tries to add another abstract method to the,
  * the compiler will throw an error. Below is an example of a functional interface.
  */
-
+@FunctionalInterface
 public interface FunctionalInterfaces {
-    //void doSomething();  // If you add this compiler will throw an exception
+    void doSomething();
 
-    default void foo() {
-        System.out.println("foo");
-    }
+//    default void foo() {  // If you add this compiler will throw an exception
+//        System.out.println("foo");
+//    }
 
 }
