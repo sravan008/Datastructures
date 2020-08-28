@@ -1,0 +1,45 @@
+
+Java 8 provides some in-built functional interfaces in the java.util.function package. These interfaces are required so that,
+ while writing lambda expressions, we don’t need to worry about creating a functional interface
+
+ Interface-Name	------------Description	------------------Abstract Method
+ Predicate<T>	Represents a predicate (boolean-value function) of one argument (reference type)	boolean test(T t)
+ DoublePredicate	Accepts one double-value argument	boolean test(double value)
+ IntPredicate	Accepts one int-value argument.	boolean test(int value)
+ LongPredicate	Accepts one long-value argument	boolean test(long value)
+ BiPredicate<T,U>	Accepts two arguments (reference types)	boolean test(T t, U u)
+
+
+Supplier is an interface that does not take in any argument but produces a value
+when the get() function is invoked. Suppliers are useful when we don’t need to supply any value and obtain a result at the same time.
+Below are some of the functional interfaces, which can be categorized as a supplier
+
+ Interface-Name	------------Description	------------------Abstract Method
+Supplier<T>	Represents a supplier of results (reference type)	T get()
+DoubleSupplier	A supplier of double-value results	double getAsDouble()
+IntSupplier	A supplier of int-value results	int getAsInt()
+LongSupplier	A supplier of long-value results	long getAsLong()
+BooleanSupplier	A supplier of boolean-value results	boolean getAsBoolean()
+
+
+Consumer<T> #
+This interface takes a parameter of type T and does not return anything.
+A consumer can be used in all contexts where an object needs to be consumed,i.e.
+taken as input, and some operation is performed on the object without returning any result.
+Below is the list of methods in the Consumer interface.
+Consumer<T> has an abstract method accept() and a default method called andThen(), which is used for chaining.
+
+
+Function is a category of functional interfaces that takes an object of type T and returns an object of type R.
+
+Until now, the functional interfaces that we’ve discussed have either not taken any argument(Supplier), not returned any value(Consumer), or returned only a boolean(Predicate).
+
+Function interfaces are very useful as we can specify the type of input and output.
+
+Below are some of the interfaces that fall in this category.
+
+
+
+
+
+
